@@ -1,0 +1,30 @@
+{
+  "name": "visie-backend",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/main.js",
+    "doc": "apidoc -i routes/ -o doc/",
+    "dev": "nodemon index.js development",
+    "prod": "node index.js production"
+  },
+  "author": "Dokoro",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "apidoc": "^0.25.0",
+    "body-parser": "^1.18.3",
+    "dir-routes": "^1.0.8",
+    "express": "^4.16.4",
+    "fecha": "^4.2.1",
+    "knex": "^0.95.14",
+    "multer": "^1.4.1",
+    "mysql2": "^2.3.3-rc.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3",
+    "supertest": "^3.0.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.9.0"
+  }
+}
